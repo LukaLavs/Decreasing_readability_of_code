@@ -4,7 +4,7 @@ import string
 import json
 import os
 
-#Code for importing and editing items which we want the function to ignore:
+#Code for managing our json file:
 ###########################################################################
 def load_json():
     """Load JSON data from a file."""
@@ -32,7 +32,7 @@ def add_to_json(new_items):
     save_json(updated_data)
 ###########################################################################    
     
-#Code for decreasing the readability of the given code:      
+#Code for decreasing the readability:      
 ######################################################      
 def nakljucni_string(dolzina=8):
     dolzina = random.randint(dolzina, 5*dolzina)
@@ -89,7 +89,7 @@ def spremeni_kodo(pot, ignoriraj=[], save_to_python=True):
 #HOW TO USE:
 
 ###################################################
-#If you are facing problems, you might need to add some keywords_and_builtins 
+#If you are facing problems, you might need to add some keywords and builtins 
 #(words which will remain unchanged after decreasing readability) to the json file:
 #For instance, you might want to add support for math module (already included).
 things_to_add = ['acos', 'asin', 'atan', 'atan2', 'ceil', 'copysign', 'cos', 'cosh', 'degrees',
@@ -98,17 +98,17 @@ things_to_add = ['acos', 'asin', 'atan', 'atan2', 'ceil', 'copysign', 'cos', 'co
 'log2', 'modf', 'nextafter', 'pow', 'radians', 'remainder', 'sin', 'sinh',
 'sqrt', 'tan', 'tanh', 'trunc'
 ]
-#Remove # in the line below:
+#In this case remove # in the line below:
 #add_to_json(things_to_add)
 ####################################################
 
 #Otherwise:
 ####################################################
 #Specify path to the code you want to edit:
-path = r"Copy and paste the path"
+path = r"Paste the path here"
 
 #Specify the names of the variables you don't want to change, 
-#for instance, you might want to include file names if you used them in a code:
+#for instance, you might want to include file names if you used them in the code:
 ignore = ["myfile1", "myfile2", "myfavouritevariable", "specificmethod"]
 
 #Run the code after removing the # below:     
