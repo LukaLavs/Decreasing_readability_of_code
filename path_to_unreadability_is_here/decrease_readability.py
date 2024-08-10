@@ -111,6 +111,6 @@ path = r"Copy and paste the path"
 #for instance, you might want to include file names if you used them in a code:
 ignore = ["myfile1", "myfile2", "myfavouritevariable", "specificmethod"]
 
-#Run the code by removing the # below:     
+#Run the code after removing the # below:     
 #print(spremeni_kodo(path, ignore))
 #####################################################
